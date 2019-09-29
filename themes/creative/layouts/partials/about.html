@@ -1,0 +1,46 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Params.about.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.about.headline .Site.Params.about.description }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Params.about.description }}
+                    <p class="text-faded">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ with .Site.Params.about.buttonText }}
+
+
+
+                    <div class="wpp-container">
+
+                    <a href="https://wa.me/5511981023334" target="_blank" class="item-wpp btn wpp-button btn-xl">
+                        
+                     
+                        
+                        <div class="row wpp-container item-wpp">
+                                <div class="container-btn">
+                                        <div class="icone-wpp"><i class="fa fa-whatsapp fa-2x wow bounceIn"></i></div>
+                                        <div class="rotulo-btn">{{ . }}</div>
+                                </div>
+
+                                
+                        </div>
+                    </a>
+
+
+                        <div class="avatar">
+                            <img src="./img/avatar.png" alt="">
+                        </div>
+
+                    </div>
+
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
