@@ -1,0 +1,108 @@
+baseurl = "/"
+languageCode = "pt-BR"
+title = "Kaviagens"
+theme = "creative"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Kaviagens"
+	description = "Your description"
+
+	# The path must be relative to the static folder
+	favicon = "./img/favicons/favicon.ico"
+    
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Kaviagens"
+
+		[params.navigation.links]
+			services  = "Serviços"
+			portfolio = "Parceiros"
+            about     = "Sobre"
+			contact   = "Contato"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Vamos viajar?"
+		subtitle   = "Viaje despreocupado, tenha um agente que facilite sua viagem e procure os melhores preços do mercado pelo pagamento de uma simples taxa"
+		buttonText = "Saiba Mais"
+
+
+	# About section
+	[params.about]
+		headline    = "Nós temos o que você precisa!"
+		description = "Você não precisa levantar um dedo! Permita que eu faça o trabalho para você.​ Vou te ajudar a encontrar o produto ou serviço certos para as suas necessidades e  vamos fazer isso rápido e fácil!"
+		buttonText  = "Fale com a Ka"
+
+
+	# Service section
+	[params.services]
+		headline = "Serviços"
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Personal Travel"
+            description = "Our templates are updated regularly so they don't break."
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Passagens"
+			description = "You can use this theme as is, or you can make changes!"
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Milhas"
+            description = "We update dependencies to keep things fresh."
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Made with Love"
+            description = "You have to make your websites with love these days!"
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Get the Creative Theme for Hugo"
+
+		[params.aside.button]
+			text = "Download now"
+			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+
+	# Contact section
+	[params.contact]
+		headline = "Fale Conosco"
+		description = " "
+		phone = "(11) 9 8102-3334"
+		email = "karinefagundessilvino@gmail.com"
+
+	# Google Maps section
+	# [params.location]
+	# 	latitude  = "34.007850"
+	# 	longitude = "-118.499305"
+	# 	maps_api_key = ""
